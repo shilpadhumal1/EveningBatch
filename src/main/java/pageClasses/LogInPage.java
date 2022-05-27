@@ -22,8 +22,10 @@ public class LogInPage {
 		@FindBy(xpath="//button[@type='submit']")
 		private WebElement continueButton;
 		@FindBy(xpath="//span[text()='Shilpa']")
-		private WebElement afterLoginText;
+		private WebElement afterLoginTexttt;
 		public LogInPage(WebDriver driver)
+		
+		
 		{
 			
 			PageFactory.initElements(driver,this);//all global non static elements are initilized by usingpage factory class
@@ -55,7 +57,7 @@ public class LogInPage {
 		}
 		public String verifyLogInisSuccessful()
 		{
-			String text = afterLoginText.getText();
+			String text = afterLoginTexttt.getText();
 			return text;
 		}
 	
