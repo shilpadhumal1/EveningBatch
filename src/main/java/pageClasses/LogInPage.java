@@ -12,7 +12,7 @@ public class LogInPage {
 	//encapsulation principle is used to design page classes
 	
 		@FindBy(xpath="//input[@type='text']")
-		private WebElement userId;
+		private WebElement userIddd;
 		@FindBy(xpath="//input[@type='password']")
 		private WebElement passWord;
 		@FindBy(xpath="//button[@type='submit']")
@@ -31,8 +31,8 @@ public class LogInPage {
 		}
 		public boolean userID(String userid)
 		{
-			userId.sendKeys(userid);
-			return userId.isDisplayed();
+			userIddd.sendKeys(userid);
+			return userIddd.isDisplayed();
 		}
 		public void password(String password)
 		{
